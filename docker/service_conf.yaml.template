@@ -56,6 +56,13 @@ redis:
   username: '${REDIS_USERNAME:-}'
   password: '${REDIS_PASSWORD:-infini_rag_flow}'
   host: '${REDIS_HOST:-redis}:6379'
+neo4j:
+  host: '${NEO4J_HOST:-localhost}'
+  port: ${NEO4J_PORT:-7687}
+  username: '${NEO4J_USER:-neo4j}'
+  password: '${NEO4J_PASSWORD:-victor_core_password}'
+  database: '${NEO4J_DB:-neo4j}'
+  encrypted: ${NEO4J_ENCRYPTED:-false}
 user_default_llm:
   default_models:
     embedding_model:
